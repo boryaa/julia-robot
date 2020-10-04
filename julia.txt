@@ -1,0 +1,10 @@
+add PyPlot
+add add https://github.com/Vibof/HorizonSideRobots.jl
+
+
+using HorizonSideRobots
+r=Robot(animate=true)
+include("task ... .jl")
+
+
+function!(r)
