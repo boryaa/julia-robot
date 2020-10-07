@@ -8,3 +8,7 @@ include("task ... .jl")
 
 
 function!(r)
+
+git add task_
+git commit -m " "
+git push
