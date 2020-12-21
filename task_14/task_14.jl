@@ -2,7 +2,9 @@
 
     for side in (Nord, West, Sud, Ost)
         num_steps = putmarkers!(r, side)
-        movements_if!(r, inverse(side), num_steps)
+        if num_steps > 0
+            movements_if!(r, inverse(side), num_steps)
+        end
     end
 
     putmarker!(r)
